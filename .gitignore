@@ -1,0 +1,6 @@
+.terraform/
+*.lock.*
+*.json
+id_rsa*
+*.tfstate*
+tf.plan
