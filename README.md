@@ -429,6 +429,8 @@ Some final notes:
 
 * Technically, we aren't *entirely* agnostic to the cloud provider. If you wanted to deploy this on AWS or Google Cloud, you'd need to swap out the contents of "providers.tf" and "cluster.tf" with the appropriate hooks (the former will be much easier than the latter). But, "k8s.tf" will remain the same--and that's where you'll be doing most of your custom architecting anyway.
 
+* I've also added a Dockerfile to this repository linked below. This is a basic extension of the "hashicorp/terraform" image that adds support for the Azure CLI. This makes it much easier to support infrastructure-as-code within CI/CD pipelines.
+
 ### Resources
 
 Additional resources? You bet!
